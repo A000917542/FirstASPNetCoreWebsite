@@ -1,0 +1,20 @@
+﻿@page
+
+@model FirstASPNetCoreWebsite.Pages.OrderModel
+@{
+
+}
+
+<form method="post">
+    <input asp-for="Order.ID" />
+    <div>
+        <label asp-for="Order.OrderDate"></label>
+        <input asp-for="Order.OrderDate" />
+        <span asp-validation-for="Order.OrderDate"></span>
+    </div>
+    <div>
+        <label asp-for="Order.Customer"></label>
+        <select asp-for="Order.Customer" asp-items="Model.CustomerList"></select>
+        <span asp-validation-for="Order.Customer"></span>
+    </div>
+</form>

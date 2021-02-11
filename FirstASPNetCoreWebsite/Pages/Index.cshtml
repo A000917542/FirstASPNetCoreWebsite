@@ -1,0 +1,89 @@
+﻿@page
+@model FirstASPNetCoreWebsite.Pages.NewPageModel
+@{
+    ViewData["Title"] = "New Page";
+    //string query = string.Empty;
+
+    //if (ViewData.ContainsKey("Q"))
+    //{
+    //    query = ViewData["Q"].ToString();
+    //}
+}
+
+
+
+<form method="post">
+    @*<input type="text" name="name" value="@Model.Customer.Name" autocomplete="given_name" />
+        <input type="email" name="email" value="@Model.Customer.Email" autocomplete="email" />*@
+    <input asp-for="Customer.ID" />
+    <div>
+        <label asp-for="Customer.Name"></label>
+        <input asp-for="Customer.Name" />
+        <span asp-validation-for="Customer.Name"></span>
+    </div>
+    <div>
+        <label asp-for="Customer.Email"></label>
+        <input asp-for="Customer.Email" />
+        <span asp-validation-for="Customer.Email"></span>
+    </div>
+    <div>
+        <label asp-for="Customer.Password"></label>
+        <input asp-for="Customer.Password" />
+        <span asp-validation-for="Customer.Password"></span>
+    </div>
+    <div>
+        <label asp-for="Customer.PhoneNumber"></label>
+        <input asp-for="Customer.PhoneNumber" />
+        <span asp-validation-for="Customer.PhoneNumber"></span>
+    </div>
+    <div>
+        <label asp-for="Customer.AmountSpent"></label>
+        <input asp-for="Customer.AmountSpent" />
+        <span asp-validation-for="Customer.AmountSpent"></span>
+    </div>
+
+
+    <input type="submit" value="Search" />
+</form>
+<div asp-validation-summary="All"></div>
+
+    @section Scripts
+{
+        <script src="~/lib/jquery-validation/dist/additional-methods.min.js"></script>
+        <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    }
+
+
+
+
+    @*<h1>Your IP Address is @HttpContext.Connection.RemoteIpAddress.ToString()</h1>
+        <h1>Routes</h1>
+        @foreach (var item in PageContext.RouteData.Values)
+        {
+
+            <dl>
+                <dt>@item.Key</dt>
+                <dd>@item.Value</dd>
+            </dl>
+        }
+
+        <h1>Headers</h1>
+        @foreach (var item in Request.Headers)
+        {
+
+            <dl>
+                <dt>@item.Key</dt>
+                <dd>@item.Value</dd>
+            </dl>
+        }
+
+        <section>
+            <h1>This is a new page.</h1>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <img src="https://www.placecage.com/200/300/" alt="" />
+        </section>*@
