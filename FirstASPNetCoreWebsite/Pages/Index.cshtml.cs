@@ -34,6 +34,6 @@ namespace FirstASPNetCoreWebsite.Pages
         }
 
         [FromForm]
-        public Customer Customer { get; set; }
+        public FirstASPNetCoreWebsite.Models.Customer Customer { get; set; }
     }
 }

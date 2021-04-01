@@ -3,28 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
-using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Mvc;
 
 namespace FirstASPNetCoreWebsite.Models
 {
-    public class Order
+    public class Product
     {
         [Key]
         [HiddenInput]
         [Required]
         public int ID { get; set; }
 
-        [ForeignKey("Customer")]
         [Required]
-        public int CustomerID { get; set; }
+        public string Name { get; set; }
 
         [Required]
-        public DateTime OrderDate { get; set; } = DateTime.Now;
-
-
-        public Customer Customer { get; set; }
-
-        public ICollection<OrderLine> OrderLines { get; set; }
+        [Range(0, double.PositiveInfinity, ErrorMessage = "This value is out of range.")]
+        public decimal Price { get; set; }
     }
 }

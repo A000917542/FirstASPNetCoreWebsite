@@ -1,0 +1,23 @@
+{
+  "start_url": "/",
+  "name": "Brent's Blog",
+  "short_name": "Brents Blog",
+  "description": "This is a blog by Brent Ritchie.",
+  "scope": "/",
+  "display": "minimal-ui",
+  "orientation": "natural",
+  "lang": "English",
+  "icons": [
+    {
+      "sizes": "900x900",
+      "type": "image/png",
+      "src": "https://mpng.subpng.com/20190502/yjt/kisspng-responsive-web-design-web-development-search-engin-5ccad824bed887.5856011115567974767817.jpg"
+    },
+    {
+      "sizes": "512x512",
+      "type": "image/png",
+      "src": "https://banner2.cleanpng.com/20180501/wuw/kisspng-web-development-computer-icons-web-application-com-web-development-icons-5ae8c5a41f97c2.8601162415252043881294.jpg"
+    }
+  ]
+
+}

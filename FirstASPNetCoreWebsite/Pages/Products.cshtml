@@ -1,0 +1,24 @@
+﻿@page
+@model FirstASPNetCoreWebsite.Pages.ProductsModel
+@{
+}
+
+<article>
+    <header>
+        <h1>Test Product</h1>
+        <input hidden id="saveForOffline" type="button" value="Save for offline" />
+        <input hidden id="sendNotifications" type="button" value="Send me notifications" />
+    </header>
+    <section>
+        <h3>Description</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies, nunc ut interdum rutrum, ligula lacus tristique est, egestas finibus elit purus at nibh. Maecenas suscipit diam nibh, vehicula lobortis nisi aliquam et. Aenean maximus ornare lectus, eget posuere turpis porttitor eget. Donec placerat consectetur bibendum. In consectetur, nulla non aliquet fermentum, risus nunc sagittis nibh, id dictum velit lacus scelerisque risus. Nullam cursus congue sollicitudin. Curabitur luctus, erat nec consequat hendrerit, nibh leo dignissim ipsum, sed sodales felis nunc in dolor. Praesent dictum mollis urna a hendrerit. Maecenas congue velit nibh, et lacinia sapien tincidunt a. Donec sit amet nulla arcu. Nulla facilisi. Integer finibus ultricies ante et gravida. Vestibulum posuere imperdiet ante, non efficitur massa ultricies et. Sed sodales feugiat neque, et elementum purus facilisis quis. Fusce fringilla lorem a augue sollicitudin ullamcorper
+        </p>
+    </section>
+</article>
+
+<dialog id="askForNotification">
+    <h1>Get notified</h1>
+    <p>There are lots of nice reasons to be notified of our products. We will not spam you!</p>
+    <input type="button" value="No Thanks" id="noNotify" /> <input type="button" value="Yes Please!" id="yesNotify" />
+</dialog>
